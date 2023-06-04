@@ -27,9 +27,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 		// TODO Auto-generated method stub
-		auth.userDetailsService(usuarioDetalleService)
-		.passwordEncoder(new BCryptPasswordEncoder());
-		super.configure(auth);
+		auth.userDetailsService(usuarioDetalleService).passwordEncoder(new BCryptPasswordEncoder());
+		
 	}
 	
 	@Override
